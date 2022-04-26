@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 :root {
-    --text-color: #555555;
+    --main-color: #555555;
     --first-color: #eeeeee;
     --second-color: #161657;
     --third-color: #ffa500;
@@ -19,6 +19,7 @@
     box-sizing: border-box;
     font-family: 'Varela Round', sans-serif;
     letter-spacing: 1px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -64,6 +65,8 @@ header li {
 
 a {
     cursor: pointer;
+    text-decoration: none;
+    color: #161657;
 }
 
 a:hover {
@@ -106,7 +109,7 @@ a:hover {
 .sobre {
     padding: 50px 0;
     text-align: center;
-    color: var(--text-color);
+    color: var(--main-color);
 }
 
 .container {
@@ -176,7 +179,7 @@ a:hover {
 .contact form {
     width: 400px;
     max-width: 100%;
-    color: var(--text-color);
+    color: var(--main-color);
 }
 
 .contact form input, .contact form textarea {
@@ -215,7 +218,6 @@ label {
 }
 
 .contact h2 {
-    /* display: block; */
     margin: 30px 0;
 }
 
@@ -227,4 +229,25 @@ label {
     color: var(--second-color);
     text-decoration: none;
     font-weight: bold;
+}
+
+footer {
+    width: 100%;
+    height: 75px;
+    position: absolute;
+    background-color: var(--main-color);
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 25px;
+}
+
+footer p {
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: var(--first-color);
 }
