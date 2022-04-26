@@ -259,7 +259,121 @@ footer p:hover {
     color: var(--fifth-color);
 }
 
+@media (max-width: 1920px){
+
+    header h3 {
+        position: absolute;
+        left: 450px;
+    }
+
+    header ul {
+        position: absolute;
+        right: 450px
+    }
+
+    .banner h1 {
+        position: absolute;
+        top: 340px;
+        left: 380px;
+    }
+
+    .banner h2 {
+        position: absolute;
+        top: 450px;
+        left: 380px;
+    }
+
+    .banner {
+        height: 850px;
+    }
+
+    .overflow {
+        height: 850px;
+    }
+}
+
+@media (max-width: 1590px){
+
+    header h3 {
+        position: absolute;
+        left: 250px;
+    }
+
+    header ul {
+        position: absolute;
+        right: 250px
+    }
+
+    .banner h1 {
+        position: absolute;
+        top: 340px;
+        left: 180px;
+    }
+
+    .banner h2 {
+        position: absolute;
+        top: 450px;
+        left: 180px;
+    }
+}
+
+@media (max-width: 1124px){
+
+    header h3 {
+        position: absolute;
+        left: 150px;
+    }
+
+    header ul {
+        position: absolute;
+        right: 150px
+    }
+
+    .banner h1 {
+        position: absolute;
+        top: 340px;
+        left: 100px;
+    }
+
+    .banner h2 {
+        position: absolute;
+        top: 450px;
+        left: 100px;
+    }
+}
+
 @media (max-width: 940px){
+
+    header h3 {
+        position: absolute;
+        left: 80px;
+    }
+
+    header ul {
+        position: absolute;
+        right: 80px
+    }
+
+    .banner h1 {
+        position: absolute;
+        top: 240px;
+        left: 100px;
+    }
+
+    .banner h2 {
+        position: absolute;
+        top: 350px;
+        left: 100px;
+    }
+
+    .banner {
+        height: 600px;
+    }
+
+    .overflow {
+        height: 600px;
+    }
+
     .container {
         display: block;
         flex-direction: column;
@@ -274,27 +388,27 @@ footer p:hover {
 
     header h3 {
         position: absolute;
-        left: 15px;
+        left: 70px;
         font-size: 24px;
     }
 
     header ul {
         position: absolute;
-        right: 15px;
+        right: 70px;
         font-size: 14px;
     }
 
     .banner h1 {
         position: absolute;
         top: 220px;
-        left: 15px;
+        left: 50px;
         font-size: 60px;
     }
 
     .banner h2 {
         position: absolute;
         top: 300px;
-        left: 15px;
+        left: 50px;
     }
     
     .sobretext p {
@@ -323,7 +437,33 @@ footer p:hover {
         position: absolute;
         bottom: 2px;
         font-size: 12px;
+    } 
+}
+
+@media (max-width: 540px){
+
+    header h3 {
+        position: absolute;
+        left: 24px;
+        font-size: 24px;
     }
 
-    
+    header ul {
+        position: absolute;
+        right: 24px;
+        font-size: 14px;
+    }
+
+    .banner h1 {
+        position: absolute;
+        top: 220px;
+        left: 30px;
+        font-size: 60px;
+    }
+
+    .banner h2 {
+        position: absolute;
+        top: 300px;
+        left: 30px;
+    }
 }
