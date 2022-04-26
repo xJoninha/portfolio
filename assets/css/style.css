@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
+:root {
+    --text-color: #555555;
+    --first-color: #eeeeee;
+    --second-color: #161657;
+    --third-color: #ffa500;
+    --fourth-color: #ff6f00;
+    --fifth-color: #1313ad;
+    --light-color: #ffffff;
+    --lighter-color: #f5f5f5;
+    --dark-color: #000000;
+}
+
 * {
     /* border: 1px solid red; */
     margin: 0;
@@ -10,7 +22,7 @@
 }
 
 body {
-    background-color: rgb(238, 238, 238);
+    background-color: var(--first-color);
 }
 
 header {
@@ -21,7 +33,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 2;
-    background-color: rgb(238, 238, 238);
+    background-color: var(--first-color);
     box-shadow: 0px 0px 10px ;
 }
 
@@ -29,9 +41,10 @@ header h3 {
     font-size: 25px;
     position: absolute;
     top: 16px;
-    left: 65px;
-    color: rgb(22, 22, 87);
+    left: 150px;
+    color: var(--second-color);
     max-width: 100%;
+    cursor: pointer;
 }
 
 header ul {
@@ -41,12 +54,12 @@ header ul {
     list-style-type: none;
     position: absolute;
     top: 23px;
-    right: 70px;
-    color: rgb(22, 22, 87);
+    right: 150px;
 }
 
 header li {
     padding: 0 8px;
+    color: var(--second-color);
 }
 
 a {
@@ -55,8 +68,8 @@ a {
 
 a:hover {
     animation-duration: 10s;
-    color: orange;
-    transition: 0.5s;
+    color: var(--third-color);
+    transition: 0.2s;
 }
 
 .overflow {
@@ -79,7 +92,7 @@ a:hover {
     top: 270px;
     left: 100px;
     font-size: 75px;
-    color: white;
+    color: var(--light-color);
 }
 
 .banner h2 {
@@ -87,12 +100,13 @@ a:hover {
     position: absolute;
     top: 370px;
     left: 100px;
-    color: white;
+    color: var(--light-color);
 }
 
 .sobre {
     padding: 50px 0;
     text-align: center;
+    color: var(--text-color);
 }
 
 .container {
@@ -122,13 +136,13 @@ a:hover {
 }
 
 .skills h3 {
-    color: orange;
+    color: var(--second-color);
     margin: 0 0 20px;
 }
 
 .skill {
     width: 300px;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--light-color);
     border-radius: 5px;
     box-shadow: 0px 0px 10px 0px rgb(209, 209, 209);
     padding: 20px;
@@ -141,15 +155,15 @@ a:hover {
 }
 
 .skill li:hover {
-    color:#ff6f00;
+    color: var(--fifth-color);
     font-weight: 600px;
     cursor: default;
-    transition: 0.8s;
+    transition: 0.2s;
 }
 
 .contact {
     position: relative;
-    background-color: whitesmoke;
+    background-color: var(--lighter-color);
 }
 
 .contact .contact-container {
@@ -162,9 +176,55 @@ a:hover {
 .contact form {
     width: 400px;
     max-width: 100%;
+    color: var(--text-color);
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    border: 1px solid #555;
+    border-radius: 2px;
+    padding: 10px;
+    margin: 5px 0 15px;
+    resize: none;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+    outline: 0;
+    border: 1px solid var(--fifth-color);
+}
+
+.contact button {
+    padding: 10px 25px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    background-color: #555;
+    color: var(--light-color);
+    border: none;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: var(--fifth-color);
+}
+
+label {
+    cursor: default;
 }
 
 .contact h2 {
-    display: block;
-    margin: 30px 0 0;
+    /* display: block; */
+    margin: 30px 0;
+}
+
+.contact p {
+    margin: 17px 0 60px;
+}
+
+.contact p a {
+    color: var(--second-color);
+    text-decoration: none;
+    font-weight: bold;
 }
