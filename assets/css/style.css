@@ -467,3 +467,36 @@ footer p:hover {
         left: 30px;
     }
 }
+
+@media (max-width: 400px){
+
+    header h3 {
+        position: absolute;
+        left: 12px;
+        font-size: 20px;
+    }
+
+    header ul {
+        position: absolute;
+        right: 12px;
+        font-size: 12px;
+    }
+
+    header ul li{
+        padding: 0 5px;
+    }
+
+    .banner h1 {
+        position: absolute;
+        top: 240px;
+        left: 15px;
+        font-size: 40px;
+    }
+
+    .banner h2 {
+        position: absolute;
+        top: 300px;
+        left: 15px;
+        font-size: 16px;
+    }
+}
