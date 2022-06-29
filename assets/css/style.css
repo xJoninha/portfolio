@@ -174,6 +174,7 @@ a:hover {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    margin: auto 25px;
 }
 
 .contact form {
@@ -217,6 +218,13 @@ label {
     cursor: default;
 }
 
+.contact {
+    border-top: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
 .contact h2 {
     margin: 30px 0;
 }
@@ -229,6 +237,17 @@ label {
     color: var(--second-color);
     text-decoration: none;
     font-weight: bold;
+}
+
+.warning {
+    background: #bcbcbc;
+    width: 500px;
+    min-height: 150px;
+    margin: auto 25px;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
 }
 
 footer {
@@ -421,6 +440,15 @@ footer p:hover {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
+    }
+
+    .contact {
+        display: block;
+    }
+
+    .warning {
+        margin: 15px 15px;
+        width: auto;
     }
 
     .contact form {
